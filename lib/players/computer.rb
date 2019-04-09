@@ -8,7 +8,7 @@ module Players
         '5'
       elsif board.cells[4] != " " && board.cells[0] == " "
         '1'
-      elsif board.cells[4] != " " && board.cells[0] != " "
+      elsif board.cells[4] != " " && board.cells[0] != " " && board.cells[8] == " "
         '9'
       else
         computer_move = rand(1..9).to_s
